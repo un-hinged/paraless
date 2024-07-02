@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paramore</title>
+    <link rel="shortcut icon" type="x-icon" href="tab.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand me-auto" href="#">paramore</a>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">paramore</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="#band">The Band</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="#album">Album</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+<!-- end navbar -->
+
+<!-- Home -->
+<section class="hero-section" id="home">
+    <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+        <h1 class="heading">paramore is a band.</h1>
+    </div>
+</section>
+<!-- end Home -->
+
+
+<!-- The band -->
+<section class="band" id="band">
+    <div class="container reveal">
+        <h2>The Band</h2>
+        <p> <a href="https://open.spotify.com/artist/74XFHRwlV6OrjEM0A2NCMF?si=K7uFOUa2RZebPMRnqffMuQ">Paramore</a> is an American rock band formed in Franklin, Tennessee, in 2004. Since 2017, the band's members include lead vocalist Hayley Williams, lead guitarist Taylor York, and drummer Zac Farro. Paramore gained significant popularity in the mid-2000s with their energetic blend of pop punk and alternative rock, characterized by Hayley Williams' powerful vocals and the band's dynamic instrumentation.</p>
+        <p>As for their hiatus, Paramore experienced several periods of lineup changes and internal conflicts over the years. In 2017, Paramore returned with their fifth studio album, "After Laughter," which marked a significant shift in their musical style towards new wave and synth-pop influences. </p>
+        
+        <div class="cards-row">
+
+            <div class="cards" onclick="openCard('card1')" title="Taylor York">
+                <img src="taylor0.jpg" alt="Image 1" class="daf">
+            </div>
+            <div class="cards" onclick="openCard('card2')" title="Hayley Williams">
+                <img src="hayley0.jpg" alt="Image 2">
+            </div>
+            <div class="cards" onclick="openCard('card3')" title="Zac Farro">
+                <img src="zac0.jpg" alt="Image 3">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Hidden inner cards -->
+<div id="card1" class="inner-card">
+    <div class="hidden-cards-row">
+        <div class="profile-card profile-card-left">
+            <img src="taylor1.jpg" alt="Taylor York" class="profile-image" title="Taylor York">
+        </div>
+
+        <div class="profile-card profile-card-right">
+            <div class="inner-card-content">
+                <button class="close-button" onclick="closeCard('card1')"> &times; </button>
+                <div class="info">
+                    <h2>Taylor York</h2>
+                    <p class="profile-title">lead guitarist</p>
+                    <p><a href="https://www.instagram.com/tayloryorkyall/">Taylor York </a>is a musician best known for being the guitarist and occasional keyboardist of the American rock band Paramore. He joined Paramore in 2007, becoming an official member after the departure of the band's founding guitarist, Hunter Lamb. Taylor York has been a core member of Paramore alongside vocalist Hayley Williams and drummer Zac Farro. </p>
+                    <p>Taylor York was born on December 17, 1989, in Nashville, Tennessee, USA. He started playing guitar at a young age and joined Paramore when he was 17 years old, contributing significantly to the band's sound and evolution over the years. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="card2" class="inner-card">
+    <div class="hidden-cards-row">
+        <div class="profile-card profile-card-left">
+            <img src="hayley12.jpg" alt="Hayley Williams" class="profile-image" title="Hayley Williams">
+        </div>
+
+        <div class="profile-card profile-card-right">
+            <div class="inner-card-content">
+                <button class="close-button" onclick="closeCard('card2')"> &times; </button>
+                <div class="info">
+                    <h2>Hayley Williams</h2>
+                    <p class="profile-title">lead vocalist</p>
+                    <p> <a href="https://www.instagram.com/yelyahwilliams/">Hayley Williams</a> is the lead vocalist and primary songwriter of the American rock band Paramore. Born on December 27, 1988, in Meridian, Mississippi, Hayley Williams gained prominence as the frontwoman of Paramore, which she co-founded in 2004 alongside guitarist Josh Farro, drummer Zac Farro, bassist Jeremy Davis, and guitarist Jason Bynum (who left shortly after the band's formation).</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="card3" class="inner-card">
+    <div class="hidden-cards-row">
+        <div class="profile-card profile-card-left">
+            <img src="zac1.jpg" alt="Zac Farro" class="profile-image" title="Zac Farro">
+        </div>
+
+        <div class="profile-card profile-card-right">
+            <div class="inner-card-content">
+                <button class="close-button" onclick="closeCard('card3')"> &times; </button>
+                <div class="info">
+                    <h2>Zac Farro</h2>
+                    <p class="profile-title">drummer</p>
+                <p> <a href="https://www.instagram.com/zacfarro/" > Zac Farro </a>is a musician who is known for his involvement as the drummer of the American rock band Paramore. He co-founded Paramore in 2004 alongside his brother Josh Farro (guitarist), Hayley Williams (vocalist), Jeremy Davis (bassist), and Jason Bynum (who left shortly after the band's formation).</p> 
+                <p>Zac Farro played a crucial role in Paramore's early success, contributing to their energetic and dynamic sound with his drumming skills. He remained with the band until 2010 when he temporarily left, but he rejoined in 2017 and has since been an active member.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- album -->
+<section class="album" id="album">
+    <div class="container">
+        <h2>Albums</h2>
+        <p> The American rock band Paramore has released six studio albums, five extended plays, two live albums, twenty-eight singles, one video album, thirty music videos, and one remix album. </p>
+
+        <div class="slider-wrapper">
+          <button id="prev-slide" class="slide-button material-symbols-rounded"></button>
+
+          <ul class="image-list">
+          <div class="cards" onclick="openCard('card4')" title="All We Know is Falling">
+            <img class="image-item" src="we know.jpg" alt="img-1" />
+          </div>
+  
+          <div class="cards" onclick="openCard('card5')" title="Riot!">
+            <img class="image-item" src="riot.jpg" alt="img-2" />
+          </div>
+         
+          <div class="cards" onclick="openCard('card6')" title="Brand New Eyes">
+            <img class="image-item" src="brand.jpg" alt="img-3" />
+          </div>
+  
+          <div class="cards" onclick="openCard('card7')" title="Paramore">
+            <img class="image-item" src="para.jpg" alt="img-4" />
+          </div>
+  
+          <div class="cards" onclick="openCard('card8')" title="After Laughter">
+            <img class="image-item" src="after.jpg" alt="img-5" />
+          </div>
+  
+          <div class="cards" onclick="openCard('card9')" title="This is Why">
+            <img class="image-item" src="why.jpg" alt="img-6" />
+          </div>
+          </ul>
+  
+          
+          <button id="next-slide" class="slide-button material-symbols-rounded">
+          </button>
+
+        </div>
+        <div class="slider-scrollbar">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
+          </div>
+        </div>
+      </div>
+
+<!-- Hidden inner cards -->
+<div id="card4" class="inner-card">
+    <div class="hidden-cards-row">
+        <div class="profile-card profile-card-right">
+            <div class="inner-card-content">
+                <button class="close-button" onclick="closeCard('card4')"> &times; </button>
+                <div class="inf">
+                    <h2>All We Know is Falling</h2>
+                    <p>All We Know Is Falling is the debut studio album by the American rock band Paramore, released on July 26, 2005, under the Atlantic-distributed Fueled by Ramen in the United States. This theme was reflected especially in the album's cover and title. Mostly categorized as a pop-punk album, the album received mostly positive reviews and has been labeled a "scene classic".</p>  
+                    <p> Here are the tracks from the album: 
+                        <a href="https://youtu.be/8Fy3bnP2dU8?si=ud_Tlvs6Z4LjlD2u">01.All We Know</a>,
+                        <a href="https://youtu.be/sCtwjc8qTE0?si=pZqPYQuBiIYohSXp">02.Pressure</a>,
+                        <a href="https://youtu.be/VbDDBuP3daQ?si=czut1bN2Zp0L45W0">03.Emergency</a>,
+                        <a href="https://youtu.be/uiRJsbgYt2A?si=tRABFe4NA-xDxmwN">04.Brighter</a>,
+                        <a href="https://youtu.be/9qWhsPgNVkc?si=03V7kHlLrFMzQzr6">05.Here We Go Again</a>,
+                        <a href="https://youtu.be/KA8Q0CmZTuc?si=7aZGEFX4nOYmGQlE">06.Never Let This Go</a>,
+                        <a href="https://youtu.be/m9z2cKjvOvM?si=RKYFhjhtHa4nJpuW">07.Whoa</a>,
+                        <a href="https://youtu.be/2daePkGx4VI?si=RzFrsaGJNb2TZ_AZ">08.Conspiracy</a>,
+                        <a href="https://youtu.be/kMOqY92hDdM?si=_ycEffEa26hdQBFe">09.Franklin</a>,
+                        <a href="https://youtu.be/GIHNLq1S6Eo?si=zr8BKJpw8FzW6XbI">10.My Heart</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="card5" class="inner-card">
+    <div class="hidden-cards-row">
+        <div class="profile-card profile-card-right">
+            <div class="inner-card-content">
+                <button class="close-button" onclick="closeCard('card5')"> &times; </button>
+                <div class="inf">
+                    <h2>Riot!</h2>
+                    <p>Paramore's album "Riot!" was released on June 12, 2007. It's the band's second studio album and marked a significant shift towards a more alternative rock sound compared to their debut album. Some of the notable tracks from "Riot!" include "Misery Business," "That's What You Get," and "Crushcrushcrush." The album received positive reviews and helped solidify Paramore's reputation as one of the leading bands in the pop punk and alternative rock scenes of the mid-2000s.</p>  
+                    <p> Here are the tracks from the album: 
+                        <a href="https://youtu.be/3Y0i0thFnNQ?si=BWUo68Hl4oNWEags">01.For a Pessimist, I'm Pretty Optimistic</a>,
+                        <a href="https://youtu.be/aVbdEnIolPo?si=5IguhImC_3_6ByoQ">02.That's What You Get</a>,
+                        <a href="https://youtu.be/Te_XfT8CgvM?si=UQ8XdUosb_Rfl06I">03.Hallelujah</a>,
+                        <a href="https://youtu.be/1VPotzhpAGE?si=QlW1AuN5CsPRY_d5">04.Misery Business</a>,
+                        <a href="https://youtu.be/6MuF-bAMgbk?si=cdDI1cziYa-tB1Yj">05.When It Rains</a>,
+                        <a href="https://youtu.be/WopgkUWG28k?si=u8FR_S4Y7U2bDjkZ">06.Let the Flames Begin</a>,
+                        <a href="https://youtu.be/oX8N5AaBnhk?si=D1rHrOdPkm0TIWGT">07.Miracle</a>,
+                        <a href="https://youtu.be/2daePkGx4VI?si=RzFrsaGJNb2TZ_AZ">08.Crushcrushcrush</a>,
+                        <a href="https://youtu.be/p1Gr_Bg2Eag?si=Kg7mR1gz5JeegrAN">09.We Are Broken</a>,
+                        <a href="https://youtu.be/zyUMk-XiVsA?si=gKkMzRSVLvw4fjgW">10.Fences</a>,
+                        <a href="https://youtu.be/RZWZMTLYufc?si=ZTxkJHazPUlNnWIa">11.Born for This</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="card6" class="inner-card">
+    <div class="hidden-cards-row">
+        <div class="profile-card profile-card-right">
+            <div class="inner-card-content">
+                <button class="close-button" onclick="closeCard('card6')"> &times; </button>
+                <div class="inf">
+                    <h2>Brand New Eyes</h2>
+                    <p>Paramore's album "Brand New Eyes" was released on September 29, 2009. It's their third studio album and is known for its introspective lyrics and mature sound compared to their previous releases.</p>  
+                    <p> Here are the tracks from the album: 
+                        <a href="https://youtu.be/EOCZUBWkLfQ?si=j1_l-VGDyT7iVhxi">01.Careful</a>,
+                        <a href="https://youtu.be/5Vy5tSWv93o?si=9Me5jd9ZCHEIIEVF">02.Ignorance</a>,
+                        <a href="https://youtu.be/zVNKM_2zJIM?si=ZRUF1tEp43WKG46Z">03.Playing God</a>,
+                        <a href="https://youtu.be/ZRJdVTXkdGI?si=f7VwoF432o6MrBCH">04.Brick by Boring Brick</a>,
+                        <a href="https://youtu.be/MhKRfD4-j-E?si=vS7pYS48GAG3Oa-z">05.Turn It Off</a>,
+                        <a href="https://youtu.be/ChXcD6Z4uvQ?si=jCVvH5HnYv5ey0Y_">06.The Only Exception</a>,
+                        <a href="https://youtu.be/75g3AcV7Dxs?si=Nk7fC3prFyb7GxDD">07.Feeling Sorry</a>,
+                        <a href="https://youtu.be/ZOA6ac1C2zk?si=gEp7GQpiu1c2wx6T">08.Looking Up</a>,
+                        <a href="https://youtu.be/WJe9M-lwZOw?si=nRThmEzBpbMtPtNI">09.Where the Lines Overlap</a>,
+                        <a href="https://youtu.be/TUSIDXYL1qo?si=VwRKMxZMWsaY9iFY">10.Misguided Ghosts</a>,
+                        <a href="https://youtu.be/GwiNZNJxTN8?si=baMJYPOC37ZvTn5b">11.All I Wanted</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="card7" class="inner-card">
+    <div class="hidden-cards-row">
+        <div class="profile-card profile-card-right">
+            <div class="inner-card-content">
+                <button class="close-button" onclick="closeCard('card7')"> &times; </button>
+                <div class="inf">
+                    <h2>Brand New Eyes</h2>
+                    <p>Paramore's self-titled album "Paramore," often referred to as the "2013 album," was released on April 5, 2013. It marked a departure from their previous sound, incorporating elements of new wave, synth-pop, and indie rock.</p>  
+                    <p> Here are the tracks from the album: 
+                        <a href="https://youtu.be/EOCZUBWkLfQ?si=j1_l-VGDyT7iVhxi">01.Fast in My Car</a>,
+                        <a href="https://youtu.be/5Vy5tSWv93o?si=9Me5jd9ZCHEIIEVF">02.Now</a>,
+                        <a href="https://youtu.be/zVNKM_2zJIM?si=ZRUF1tEp43WKG46Z">03.Grow Up</a>,
+                        <a href="https://youtu.be/ZRJdVTXkdGI?si=f7VwoF432o6MrBCH">04.Daydreaming</a>,
+                        <a href="https://youtu.be/MhKRfD4-j-E?si=vS7pYS48GAG3Oa-z">05.Interlude: Moving On</a>,
+                        <a href="https://youtu.be/ChXcD6Z4uvQ?si=jCVvH5HnYv5ey0Y_">06.Ain't It Fun</a>,
+                        <a href="https://youtu.be/75g3AcV7Dxs?si=Nk7fC3prFyb7GxDD">07.Part II</a>,
+                        <a href="https://youtu.be/ZOA6ac1C2zk?si=gEp7GQpiu1c2wx6T">08.Last Hope</a>,
+                        <a href="https://youtu.be/WJe9M-lwZOw?si=nRThmEzBpbMtPtNI">09.Still Into You</a>,
+                        <a href="https://youtu.be/TUSIDXYL1qo?si=VwRKMxZMWsaY9iFY">10.Anklebiters</a>,
+                        <a href="https://youtu.be/GwiNZNJxTN8?si=baMJYPOC37ZvTn5b">11.Interlude: Holiday</a>,
+                        <a href="https://youtu.be/5bPEnio7tuw?si=_ueJp27H-yWXK9OE">12.Proof</a>,
+                        <a href="https://youtu.be/Vd_0Hri6GWc?si=x5uFaOYsziN23muv">13.Hate to See Your Heart Break</a>,
+                        <a href="https://youtu.be/5ZbKPERsjQs?si=UoYoLZftFyCB-7Q_">14.(One of Those) Crazy Girls</a>,
+                        <a href="https://youtu.be/nzjJMP4Psbk?si=5rp4ifsuK_jYmStG">15.Interlude: I'm Not Angry Anymore</a>,
+                        <a href="https://youtu.be/FPUDb23CdZY?si=JH76TVqg1TCCvPB4">16.Be Alone</a>,
+                        <a href="https://youtu.be/4oScRBsOV6I?si=xZ5rmVhw7ZoO3wkV">17.Future</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="card8" class="inner-card">
+    <div class="hidden-cards-row">
+        <div class="profile-card profile-card-right">
+            <div class="inner-card-content">
+                <button class="close-button" onclick="closeCard('card8')"> &times; </button>
+                <div class="inf">
+                    <h2>Brand New Eyes</h2>
+                    <p>Paramore's album "After Laughter" was released on May 12, 2017. It marked another shift in the band's sound, moving towards a more new wave and synth-pop influenced style.</p>  
+                    <p> Here are the tracks from the album: 
+                        <a href="https://youtu.be/V0hvzjyuZ5k?si=Tmjz9iF8kQM39Kyv">01.Hard Times</a>,
+                        <a href="https://youtu.be/UR2ZTwZAxxE?si=6Iijot8s9OdJ5e9_">02.Rose-Colored Boy</a>,
+                        <a href="https://youtu.be/EG7_za4c7xk?si=tLtXxt9HpD7fV4Mc">03.Told You So</a>,
+                        <a href="https://youtu.be/TPEqfV997LY?si=Xj46NRNx9SMY-yWz">04.Forgiveness</a>,
+                        <a href="https://youtu.be/kBmlbzW1-yc?si=2khOMU-0IskjCbT_">05.Fake Happy</a>,
+                        <a href="https://youtu.be/8Ju7T4J1qbc?si=UpVdNPTmska0SWzm">06.26</a>,
+                        <a href="https://youtu.be/3m8ElO9Y50Y?si=lnam2Pm56b0xNHxH">07.Pool</a>,
+                        <a href="https://youtu.be/fIx6Xg0n9L4?si=4DScX7DBLiXgA_VQ">08.Grudges</a>,
+                        <a href="https://youtu.be/RQ6Kok-8re4?si=BFj3vwc-ulcK-Xhh">09.Caught in the Middle</a>,
+                        <a href="https://youtu.be/TUSIDXYL1qo?si=VwRKMxZMWsaY9iFY">10.Idle Worship</a>,
+                        <a href="https://youtu.be/2hsc42CFrUM?si=pAFy9abEfLdtcont">11.No Friend</a>,
+                        <a href="https://youtu.be/EPrVfrO3y78?si=UhVPthAs_SjC2xq7">12.Tell Me How</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="card9" class="inner-card">
+    <div class="hidden-cards-row">
+        <div class="profile-card profile-card-right">
+            <div class="inner-card-content">
+                <button class="close-button" onclick="closeCard('card9')"> &times; </button>
+                <div class="inf">
+                    <h2>This is Why</h2>
+                    <p>Paramore's album "This Is Why" is the sixth studio album by the American rock band Paramore, released on February 10, 2023 through Atlantic Records, their final studio album for the label. It is their first album since 2017, following After Laughter.</p>  
+                    <p> Here are the tracks from the album: 
+                        <a href="https://youtu.be/_Eb4r-GU-yo?si=FSkJnclfW_AtcMUa">01.This is Why</a>,
+                        <a href="https://youtu.be/-s_y8h9Pk_Q?si=Uje2pRet4Q4ZnZj6">02.The News</a>,
+                        <a href="https://youtu.be/yvqp-Mjv1tg?si=MoW3K6cfD2XKJPpL">03.Running Out of Time</a>,
+                        <a href="https://youtu.be/gUjciB89OyI?si=g1e4gEi2QR8AvM5C">04.C'est Comme Ça</a>,
+                        <a href="https://youtu.be/mNugIVCvFEM?si=0TZgiqFWa7MPGX6I">05.Big Man, Little Dignity</a>,
+                        <a href="https://youtu.be/8Ju7T4J1qbc?si=UpVdNPTmska0SWzm">06.You First</a>,
+                        <a href="https://youtu.be/BY_pF2VJ2dw?si=wlRZvX1FZ3IgKlmc">07.Figure 8</a>,
+                        <a href="https://youtu.be/jkX_dMFO8q4?si=CtqfTzm08gDmp1oQ">08.Liar</a>,
+                        <a href="https://youtu.be/Y-2aeudJiLY?si=2ed0D-fO1s5q-9-2">09.Crave</a>,
+                        <a href="https://youtu.be/esi93f6QTrg?si=smArnvkkTMyYdL40">10.Thick Skull</a> </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<footer>
+<div class="footerContainer">
+    <div class="socialIcons">
+        <a href="https://www.facebook.com/paramore/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/paramore/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/paramore"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCc7_woMAIVIW2mAr1rPCsFQ"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://open.spotify.com/artist/74XFHRwlV6OrjEM0A2NCMF?si=K7uFOUa2RZebPMRnqffMuQ"><i class="fa-brands fa-spotify"></i></a>
+    </div>
+    <div class="footerBottom">
+        <p>  © 2024 Paramore · All Rights Reserved </p>
+    </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+ <!-- footer 
+
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> paramore </a>
+            <div class="offcanvas offcanvas-end me-auto" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">paramore</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#albums">Albums</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#band">The Band</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+     Home 
+    <section class="home" id="home">
+        <div class="content">
+            <p>Paramore is a band.</p>
+        </div>
+    </section>
+
+<section class="home" id="home">
+    <h1 class="heading"> The Band </h1>
+    <h3 class="title"> meet professionals trainers </h3>
+
+    <div class="card container"> 
+        <div class="card">
+            <img src="zac0.jpg" alt="">
+            <h3> someone's name </h3>
+            <p>i love teaching</p>
+            <div class="icons">
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+        </div>
+    
+
+        <div class="card">
+            <img src="hayley0.jpg" alt="">
+            <h3> someone's name </h3>
+            <p>i love teaching</p>
+            <div class="icons">
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="taylor0.jpg" alt="">
+            <h3> someone's name </h3>
+            <p>i love teaching</p>
+            <div class="icons">
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+        </div>
+
+</div>
+</section>
+
+     The band tab 
+    <section id="band" class="reveal">
+        <div class="band-title">
+            <h2>The Band</h2>
+            <p>Paramore is an American rock band formed in Franklin, Tennessee, in 2004. Since 2017, the band's members
+                include lead vocalist Hayley Williams, lead guitarist Taylor York, and drummer Zac Farro.
+                <br>Williams and Farro are founding members of the group, while York, a high school friend of the
+                original lineup, joined in 2007. Williams is the only member to appear on all six of Paramore's studio
+                albums.</p>
+        </div>
+
+
+        <div class="container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="taylor0.jpg" alt="Taylor York" style="width:100%;height:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Taylor York</h1>
+                        <p>Lead Guitarist</p>
+                        <p>Taylor Benjamin York (born December 17, 1989) is an American musician, best known as the lead
+                            guitarist for the rock band Paramore.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="hayley0.jpg" alt="Hayley Williams" style="width:100%;height:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Hayley Williams</h1>
+                        <p>Vocalist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="zac0.jpg" alt="Zac Farro" style="width:100%;height:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Zac Farro</h1>
+                        <p>Drummer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <sdfsdfsdfscript src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    
+-->
+
+
